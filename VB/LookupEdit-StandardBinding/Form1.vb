@@ -45,6 +45,8 @@ Namespace LookupEdit_StandardBinding
 			' riLookup.PopulateColumns();
 			' riLookup.Columns["Description"].Visible = false;
 
+			gridControl1.RepositoryItems.Add(riLookup)
+
 			' Assign the in-place LookupEdit control to the grid's CategoryID column.
 			' Note that the data types of the "ID" and "CategoryID" fields match.
 			gridView1.Columns("CategoryID").ColumnEdit = riLookup
