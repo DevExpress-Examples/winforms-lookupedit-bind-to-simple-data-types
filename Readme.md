@@ -13,6 +13,11 @@ This example shows how to use an in-place LookUpEdit control (RepositoryItemL
 * ValueMember - Specifies the field from the lookup data source whose values match the editor's edit value.
 * DisplayMember - Identifies the field from the lookup data source whose values match the editor's display text.
 
+
+<b>See also:</b>
+
+[DevExpress WinForms Troubleshooting - LookUp Editors](https://go.devexpress.com/CheatSheets_WinForms_Examples_T929986.aspx)
+
 <br/>
 
 
