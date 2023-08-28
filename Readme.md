@@ -4,25 +4,30 @@
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 <!-- default badges end -->
 <!-- default file list -->
-*Files to look at*:
+
+# WinForms LookupEdit - Standard Binding (Simple Data Types)
+
+This example shows how to create and configure an in-place LookUpEdit control (`RepositoryItemLookUpEdit`) for editing cells in a grid column.
+
+The lookup editor is used to edit the **CategoryID** field values from the `Products` list. The lookup editor displays corresponding category names in the edit box. 
+
+Use the following properties to bind the LookUpEdit control to data:
+
+* [DataSource](https://docs.devexpress.com/WindowsForms/DevExpress.XtraEditors.Repository.RepositoryItemLookUpEditBase.DataSource) - Specifies the source of records.
+* [DisplayMember](https://docs.devexpress.com/WindowsForms/DevExpress.XtraEditors.Repository.RepositoryItemLookUpEditBase.DisplayMember) - The data source field whose values are visible to users. A value from this field is displayed in the lookup’s text box when a user selects a record. 
+* [ValueMember](https://docs.devexpress.com/WindowsForms/DevExpress.XtraEditors.Repository.RepositoryItemLookUpEditBase.ValueMember) - The data source field with unique/key values. A value from this data field is assigned to the lookup's `EditValue` property when a user selects a record. When a lookup editor is used to edit cell values in the Data Grid, the type of the `ValueMember` field must match the type of the field assigned to the grid's lookup column (GridColumn.FieldName). Enable the lookup's [ThrowExceptionOnInvalidLookUpEditValueType](https://docs.devexpress.com/WindowsForms/DevExpress.XtraEditors.Repository.RepositoryItemLookUpEditBase.ThrowExceptionOnInvalidLookUpEditValueType) option to detect data type issues.
+
+## Files to Review
 
 * [Form1.cs](./CS/LookupEdit-StandardBinding/Form1.cs) (VB: [Form1.vb](./VB/LookupEdit-StandardBinding/Form1.vb))
 * [Program.cs](./CS/LookupEdit-StandardBinding/Program.cs) (VB: [Program.vb](./VB/LookupEdit-StandardBinding/Program.vb))
-<!-- default file list end -->
-# LookupEdit - Standard Binding (to Simple Data Types)
 
+## Documentation
 
-This example shows how to use an in-place LookUpEdit control (RepositoryItemLookUpEdit) for editing cells in a grid column.<br><br>The lookup editor in the example is used to edit the CategoryID field values from the Products list. However, instead of displaying category IDs, the editor will display corresponding category names in the edit box.<br><br>The main properties used to set up the LookUpEdit control are
+* [Standard Binding (to Simple Data Types)](https://docs.devexpress.com/WindowsForms/116015/controls-and-libraries/editors-and-simple-controls/lookup-editors/standard-binding-to-simple-data-types)
+* [Advanced Binding (to Business Objects)](https://docs.devexpress.com/WindowsForms/116016/controls-and-libraries/editors-and-simple-controls/lookup-editors/advanced-binding-to-business-objects)
+* [Lookup Main Settings](https://docs.devexpress.com/WindowsForms/116029/controls-and-libraries/editors-and-simple-controls/lookup-editors/lookup-editors-and-main-settings)
 
-* DataSource - Specifies the lookup data source.
-* ValueMember - Specifies the field from the lookup data source whose values match the editor's edit value.
-* DisplayMember - Identifies the field from the lookup data source whose values match the editor's display text.
+## See Also
 
-
-<b>See also:</b>
-
-[DevExpress WinForms Troubleshooting - LookUp Editors](https://go.devexpress.com/CheatSheets_WinForms_Examples_T929986.aspx)
-
-<br/>
-
-
+* [DevExpress WinForms Troubleshooting - LookUp Editors](https://go.devexpress.com/CheatSheets_WinForms_Examples_T929986.aspx)
